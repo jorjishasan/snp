@@ -14,6 +14,7 @@ const translations = {
     snpLibrary: "SNP Library",
     populationGenomics: "Population Genomics",
     humanHealth: "Human Health",
+    history: "History",
     snpJournal: "SNP Journal",
     comingSoon: "Coming Soon",
     snpLab: "SNP Lab",
@@ -26,6 +27,7 @@ const translations = {
     snpLibrary: "مكتبة SNP",
     populationGenomics: "علم الجينوم السكاني",
     humanHealth: "الصحة البشرية",
+    history: "التاريخ",
     snpJournal: "مجلة SNP",
     comingSoon: "قريباً",
     snpLab: "مختبر SNP",
@@ -246,6 +248,18 @@ export function MasterMenu({ isOpen, onClose }: MasterMenuProps) {
                       </div>
                     </div>
                   </div>
+
+                  {/* History */}
+                  <button
+                    onClick={() => handleNav("/library/history")}
+                    className={`w-full flex items-center px-4 py-2.5 text-sm rounded-lg transition-colors ${
+                      isPathActive("/library/history")
+                        ? "bg-accent text-foreground"
+                        : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
+                    }`}
+                  >
+                    <span>{t.history}</span>
+                  </button>
                 </div>
               </div>
             </nav>

@@ -15,6 +15,7 @@ import Journal from "./pages/Journal";
 import LabStudies from "./pages/LabStudies";
 import LabGithub from "./pages/LabGithub";
 import LabProjects from "./pages/LabProjects";
+import History from "./pages/History";
 
 function Router() {
   return (
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/library/population-genomics/:slug" component={PopulationGenomics} />
       <Route path="/library/human-health" component={HumanHealth} />
       <Route path="/library/human-health/:slug" component={HumanHealth} />
+      <Route path="/library/history" component={History} />
 
       {/* SNP Journal */}
       <Route path="/journal" component={Journal} />
