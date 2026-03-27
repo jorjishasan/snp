@@ -3,7 +3,7 @@ import { MasterMenu } from "@/components/MasterMenu";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
-import { Search, Moon, Sun, Menu, X, Globe, Dna, HeartPulse, BookOpen, FlaskConical } from "lucide-react";
+import { Search, Moon, Sun, Menu, X, Globe, Dna, HeartPulse, BookOpen, FlaskConical, Book, Monitor } from "lucide-react";
 
 const heroImages = [
   "/images/aerial-1.jpg",
@@ -18,7 +18,7 @@ const mainSections = [
     description: "Population genomics, human health, and comprehensive SNP research data",
     descriptionAr: "علم الجينوم السكاني والصحة البشرية وبيانات أبحاث SNP الشاملة",
     path: "/library",
-    icon: Dna,
+    icon: BookOpen,
   },
   {
     title: "SNP Journal",
@@ -26,7 +26,7 @@ const mainSections = [
     description: "Peer-reviewed scientific publications",
     descriptionAr: "منشورات علمية محكمة",
     path: "/journal",
-    icon: BookOpen,
+    icon: Book,
     comingSoon: true,
   },
   {
@@ -35,7 +35,7 @@ const mainSections = [
     description: "Our studies, open-source tools, and project explanations",
     descriptionAr: "دراساتنا وأدواتنا مفتوحة المصدر وشروحات المشاريع",
     path: "/lab/studies",
-    icon: FlaskConical,
+    icon: Monitor,
   },
 ];
 
@@ -160,7 +160,7 @@ export default function Home() {
           <p className="text-lg md:text-xl text-white/90 font-light max-w-2xl">
             {isRTL
               ? "استكشاف تعدد أشكال النوكليوتيدات المفردة وعلم الجينوم"
-              : "Exploring Single Nucleotide Polymorphisms & Genomics"}
+              : "Research on Natural Science."}
           </p>
         </div>
       </section>
